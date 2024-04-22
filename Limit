@@ -1,0 +1,17 @@
+function generateFibonacci(limit) {
+  // Initialize array to store Fibonacci sequence
+  var fibonacciSequence = [0, 1];
+
+  // Generate Fibonacci sequence
+  for (var i = 2; i <= limit; i++) {
+    fibonacciSequence[i] = fibonacciSequence[i - 1] + fibonacciSequence[i - 2];
+  }
+
+  // Return the generated Fibonacci sequence
+  return fibonacciSequence.slice(0, limit + 1);
+}
+
+// Example usage:
+var limit = 10;
+var fibonacciSequence = generateFibonacci(limit);
+console.log("Fibonacci sequence up to " + limit + ": ", fibonacciSequence);
