@@ -58,3 +58,6 @@ acc2.withdraw(100);
 
 acc1.checkBalance();
 acc2.checkBalance();
+
+acc1.checkBalance();
+acc2.checkBalance();
